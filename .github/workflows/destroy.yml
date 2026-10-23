@@ -34,18 +34,6 @@ jobs:
         with:
           terraform_version: "1.16.6"
 
-      # Runs a single command using the runners shell
-      - name: Terraform Init
-        run: terraform init
-
-      # Runs a set of commands using the runners shell
-      - name: Terraform Init
-        run: terraform init
-
-      - name: Terraform Plan
-        run: terraform plan -out=tfplan
-
-
       - name: Terraform destroy
         run: terraform destroy -auto-approve 
 
